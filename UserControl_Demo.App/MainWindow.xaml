@@ -3,26 +3,25 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:UserControl_Demo.App"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800"
         DataContext="{Binding RelativeSource={RelativeSource Self}}">
-    
-    
+
+
     <StackPanel>
         <StackPanel Orientation="Horizontal">
-            <Label Content="Name"/>
-            <TextBox Text="{Binding NameP, UpdateSourceTrigger=PropertyChanged}"/>
+            <Label Content="Name" />
+            <TextBox Text="{Binding NameP, UpdateSourceTrigger=PropertyChanged}" />
         </StackPanel>
         <StackPanel Orientation="Horizontal">
-            <Label Content="Age"/>
-            <TextBox Text="{Binding Age, UpdateSourceTrigger=PropertyChanged}"/>
+            <Label Content="Age" />
+            <TextBox Text="{Binding Age, UpdateSourceTrigger=PropertyChanged}" />
         </StackPanel>
         <StackPanel Orientation="Horizontal">
             <Button Content="Reset"
-                    Click="ButtonReset_OnClick"/>
+                    Click="ButtonReset_OnClick" />
             <Button Content="Submit"
-                    Click="ButtonSubmit_OnClick"/>
+                    Click="ButtonSubmit_OnClick" />
         </StackPanel>
     </StackPanel>
 </Window>

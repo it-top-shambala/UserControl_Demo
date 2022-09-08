@@ -8,29 +8,39 @@ namespace UserControl_Demo.App;
 public partial class MainWindow : Window, INotifyPropertyChanged
 {
     private string _nameP;
+
     public string NameP
     {
         get => _nameP;
         set
         {
-            if (value == _nameP) return;
+            if (value == _nameP)
+            {
+                return;
+            }
+
             _nameP = value;
             OnPropertyChanged(nameof(NameP));
         }
     }
 
     private int _age;
+
     public int Age
     {
         get => _age;
         set
         {
-            if (value == _age) return;
+            if (value == _age)
+            {
+                return;
+            }
+
             _age = value;
             OnPropertyChanged(nameof(Age));
         }
     }
-    
+
     public MainWindow()
     {
         InitializeComponent();
