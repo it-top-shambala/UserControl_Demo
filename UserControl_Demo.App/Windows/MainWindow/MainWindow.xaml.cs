@@ -1,9 +1,7 @@
-﻿using System.Collections.Generic;
-using System.ComponentModel;
-using System.Runtime.CompilerServices;
+﻿using System.ComponentModel;
 using System.Windows;
 
-namespace UserControl_Demo.App;
+namespace UserControl_Demo.App.Windows.MainWindow;
 
 public partial class MainWindow : Window, INotifyPropertyChanged
 {
@@ -44,6 +42,12 @@ public partial class MainWindow : Window, INotifyPropertyChanged
     public MainWindow()
     {
         InitializeComponent();
+
+        InputName.LabelName = nameof(NameP);
+        InputName.ValueElement = NameP;
+
+        InputAge.LabelName = nameof(Age);
+        InputAge.ValueElement = Age.ToString();
     }
 
     public event PropertyChangedEventHandler? PropertyChanged;
