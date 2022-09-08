@@ -42,12 +42,6 @@ public partial class MainWindow : Window, INotifyPropertyChanged
     public MainWindow()
     {
         InitializeComponent();
-
-        InputName.LabelName = nameof(NameP);
-        InputName.ValueElement = NameP;
-
-        InputAge.LabelName = nameof(Age);
-        InputAge.ValueElement = Age.ToString();
     }
 
     public event PropertyChangedEventHandler? PropertyChanged;

@@ -13,9 +13,10 @@
     </Window.Resources>
 
     <StackPanel>
-
-        <uc:InputText x:Name="InputName" />
-        <uc:InputText x:Name="InputAge" />
+        <uc:InputText LabelProperty="Name"
+                      ValueProperty="{Binding NameP}" />
+        <uc:InputText LabelProperty="Age"
+                      ValueProperty="{Binding Age}" />
 
         <StackPanel Orientation="Horizontal">
             <Button Content="Reset"
